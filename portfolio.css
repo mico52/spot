@@ -836,7 +836,8 @@ section{
     }
 }
 @media(max-width:480px){
-    .d li{
-        width: 50%;
+    .d ul{
+        display: block;
+        height: auto;
     }
 }
