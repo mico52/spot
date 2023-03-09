@@ -801,26 +801,25 @@ section{
 }
 
 /* 3d */
+#d{
+    min-height: auto;
+}
 .d{
     width: 100%;
-    margin: 0 auto;
 }
 .d ul{
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    max-width: 90%;
-    /* align-items: center; */
-    margin: 0 auto;
-    padding-bottom: 1.2em;
+    align-items: center;
 }
 .d li{
-    width: 30%;
+    width: 26%;
     height: 100%;
+    padding: 2.6em 0;
 }
 .d li img{
     width: 90%;
-    display: block;
 }
 @media(max-width:992px){
     .d ul {
@@ -836,8 +835,7 @@ section{
     }
 }
 @media(max-width:480px){
-    .d ul{
-        display: block;
-        height: auto;
+    .d li{
+        width: 50%;
     }
 }
