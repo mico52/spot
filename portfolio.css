@@ -261,7 +261,6 @@ section{
 .home li{
     width: 28%;
     height: 100%;
-    /* padding: 2.6em 0; */
 }
 .home li img{
     width: 90%;
@@ -281,8 +280,9 @@ section{
     }
 }
 @media(max-width:480px){
-    .home li{
-        width: 50%;
+    .home ul{
+        display: block;
+        height: auto;
     }
 }
 /* home */
@@ -297,32 +297,6 @@ section{
     line-height: 72px;
     background-color: #fff;
     font-weight: 400;
-}
-.homeBox{
-    width: 100%;
-    height: calc(100vh - 72px);
-}
-.topBox,
-.topButtom{
-    width: 100%;
-    height: 50%;
-    display: flex;
-}
-.topBox li,
-.topButtom li{
-    width: 25%;
-    height: 100%;
-    text-align: center;
-    display: inline-block;
-    box-sizing: border-box;
-}
-.topBox li::before,
-.topButtom li::before{
-    content: '';
-    width: 0;
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
 }
 .logoImg{
     background-color: rgba(24, 83, 150);
@@ -369,30 +343,7 @@ section{
 .imgText p{
     display: inline-block;
 }
-@media(max-width:992px){
-    .homeBox{
-        height: auto;
-    }
-    .topBox,
-    .topButtom{
-        flex-wrap: wrap;
-    }
-    .topBox li,
-    .topButtom li{
-        width: 50%;
-        height: auto;
-    }
-}
 @media(max-width:480px){
-    .topBox,
-    .topButtom{
-        display: inline-block;
-    }
-    .topBox li,
-    .topButtom li{
-        width: 100%;
-        height: 16em;
-    }
     .logoText,
     .imgText,
     .pText,
@@ -442,77 +393,10 @@ section{
 /* web */
 .web{
     width: 100%;
-    height: auto;
+    height: 130em;
     background-image: url(image/webbg.jpg);
     background-repeat: repeat;
     background-size: contain;
-}
-.smallWeb{
-    display: none;
-}
-.middleLine{
-    width: 6px;
-    height: 86em;
-    background-color: #333;
-    margin: auto;
-    position: relative;
-}
-.lineText1,
-.lineText2,
-.lineText3,
-.lineText4,
-.lineText5{
-    font-size: 28px;
-    position: absolute;
-    letter-spacing: 1px;
-    white-space: nowrap;
-    text-align: left;
-    top: -16px;
-}
-.lineText1{
-    left: -150px;
-}
-.lineText2{
-    left: 150px;
-}
-.lineText3{
-    left: -150px;
-}
-.lineText4{
-    left: 150px;
-}
-.lineText5{
-    left: -150px;
-}
-.branch1,
-.branch2,
-.branch3,
-.branch4,
-.branch5{
-    width: 120px;
-    height: 6px;
-    background-color: #333;
-    position: absolute;
-}
-.branch1{
-    top: 200px;
-    left: -120px;
-}
-.branch2{
-    top: 380px;
-    left: 0;
-}
-.branch3{
-    top: 560px;
-    left: -120px;
-}
-.branch4{
-    top: 740px;
-    left: 0;
-}
-.branch5{
-    top: 1090px;
-    left: -120px;
 }
 .personaImg{
     position: absolute;
@@ -584,45 +468,11 @@ section{
         height: auto;
         padding-bottom: 1.8em;
     }
-    .middleLine{
-        display: none;
-    }
-    .smallWeb{
-        display: block;
-    }
-    .smalltextP,
-    .smalltextF,
-    .smalltextU,
-    .smalltextW,
-    .smalltextPR{
-        font-size: 24px;
-        padding: 1.2em 0 .6em 0;
-        text-align: left;
-        width: 100%;
-        max-width: 90%;
-        margin: 0 auto;
-        border-bottom: #333 2px solid;
-    }
-    .smallP,
-    .smallW,
-    .smallPR{
-        width: 100%;
-        height: 18em;
-        padding-top: .3em;
-    }
-    .smallP img,
-    .smallW img,
-    .smallPR img{
-        width: 90%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top center;
-    }
 }
 /* flora */
 .flora{
     width: 100%;
-    height: 78em;
+    height: 82em;
     background-color: rgba(0, 0, 0, 0.15);
 }
 .floraWrap{
